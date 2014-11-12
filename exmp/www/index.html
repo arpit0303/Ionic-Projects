@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+
+  <ion-side-menus>
+      <ion-side-menu-content>
+        <ion-header-bar class="bar-stable bar-positive">
+          <div>
+            <button class="button icon button-clear ion-navicon-round" ng-click="toggleLeft()"></button>
+          </div>
+          <h1 class="title">HOME</h1>
+        </ion-header-bar>
+        <ion-tabs class="tabs-dark">
+              <ion-tab title="HOME">
+                  <ion-content>
+                    <p>Home tab</p>
+                  </ion-content>
+              </ion-tab>
+              <ion-tab title="ABOUT ME">
+                  <ion-content>
+                    <p>About tab</p>
+                  </ion-content>
+              </ion-tab>
+        </ion-tabs>
+        </ion-side-menu-content>
+            <ion-side-menu side="left">
+                <ion-list>
+                  <ion-item>HOME</ion-item>
+                </ion-list>
+                <ion-list>
+                  <ion-item>ABOUT ME</ion-item>
+                </ion-list>
+        </ion-side-menu>
+
+    </ion-side-menus>
+  </body>
+</html>
