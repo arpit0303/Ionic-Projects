@@ -19,7 +19,8 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="js/app.js"></script>
+    <script src="todo.js"></script>
+    <script src="todo.services.js"></script>
   </head>
   <body  ng-controller="TodoCtrl">
   
@@ -86,7 +87,7 @@
       </script>
 
       <ion-footer-bar class="bar-positive">
-          <button class="button button-icon icon pull-right" ng-click="newTask()">
+          <button class="button button-icon pull-right" ng-click="newTask()">
               <i class="icon ion-compose"></i>
           </button>
       </ion-footer-bar>
